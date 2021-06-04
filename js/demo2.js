@@ -3,21 +3,6 @@
     const chars = ['1','0'];
     const charsTotal = chars.length;
     const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
-    
-    // var loaderScreen = document.querySelector(".loader");
-    // // When the window is loaded....
-    // window.addEventListener("load", function() {  
-    //   if(document.cookie.indexOf("visited=true") === -1) {
-    //     mainContainer.classList.add("hidden");    
-    //     loaderScreen.classList.remove("hidden");
-    //     logoAnimation()
-    //     setTimeout(function(){
-    //       loaderScreen.classList.add("hidden");      
-    //       mainContainer.classList.remove("hidden");
-    //     }, 4000);
-    //   } 
-    // });
-  
 
     class Entry {
         constructor(el) {
@@ -31,8 +16,6 @@
             this.lettersTotal = this.DOM.title.letters.length;
             observer.observe(this.DOM.el);
         }
-        
-
         
         
         enter(direction = 'down') {
